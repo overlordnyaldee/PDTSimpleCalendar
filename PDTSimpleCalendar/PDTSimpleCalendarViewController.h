@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol PDTSimpleCalendarViewDelegate;
+@class PDTSimpleCalendarViewCell;
 
 /**
  *  Define the number of days in a week. Usually 7.
@@ -87,6 +88,13 @@ extern const NSUInteger PDTSimpleCalendarDaysPerWeek;
  *  @param animated if you wanna animate the scrolling
  */
 - (void)scrollToDate:(NSDate *)date animated:(BOOL)animated;
+
+/**
+ *  Returns the cell for a given date
+ *
+ *  @param date   the date associated with a cell
+ */
+- (PDTSimpleCalendarViewCell *)cellForItemAtDate:(NSDate *)date;
 
 @end
 

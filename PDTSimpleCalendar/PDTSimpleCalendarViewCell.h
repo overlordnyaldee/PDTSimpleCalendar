@@ -96,6 +96,11 @@
  */
 @property (nonatomic, strong) UIColor *textSelectedColor UI_APPEARANCE_SELECTOR;
 
+/**
+ *  The UILabel that is used to display the day for the cell.
+ */
+@property (nonatomic, strong) UILabel *dayLabel;
+
 
 /**
  * Sets the date for this cell
